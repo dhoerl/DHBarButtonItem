@@ -8,6 +8,8 @@ The "itemsArray" parameter contains instructions on how to build the first displ
 
 When you specify an item, you can horizontally align it left, center, or right, and you can increase or decrease its vertical position relative to other items.
 
+Retina displays proper treatment (finely rendered text, double sized images).
+
 To change the displayed item, you message the object with: 
 
   - (void)imageFromItems:(NSArray *)items;
