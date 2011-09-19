@@ -6,6 +6,8 @@ You create this item using the class factory method:
 
 The "itemsArray" parameter contains instructions on how to build the first displayed image. The optDict parameter lets you set some initial conditions such as left and right side padding, and should contain arrays detailing all potential images or text which may appear in any given column (for the purpose of insuring sufficient spaces exists in that column. The returned object has the initial image set. The width of this and all future images is fixed and will not change.
 
+UIToolbars auto-mask images, rendering them in white. UINavigationBars show the actual image - thus DHBarButtonItem provides options to auto-mask images for you, and optionally lets you set the item color.
+
 When you specify an item, you can horizontally align it left, center, or right, and you can increase or decrease its vertical position relative to other items.
 
 Retina displays proper treatment (finely rendered text, double sized images).
@@ -14,7 +16,7 @@ To change the displayed item, you message the object with:
 
   - (void)imageFromItems:(NSArray *)items;
 
-Look at the demo code in ViewController. m
+Look at the demo code in ViewController.m
 
 Note 1: This code utilizes "ARC" - if you are not using it you will almost certainly need to fork this code and add the appropriate retain and releases.
 

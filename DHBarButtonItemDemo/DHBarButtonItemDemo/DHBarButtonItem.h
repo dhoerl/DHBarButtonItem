@@ -45,9 +45,12 @@ use
 #define kBBITTimage			@"kBBITTimage"				// UIImage - will be resized if height > 20 points
 #define   kBBITTalignment	@"kBBITTalignment"			// NSNumber (integral) - UITextAlignment, default is left. Include in image dictionary
 #define   kBBITTbaseline	@"kBBITTbaseline"			// NSNumber (float), optional - tweak baseline, default is 0
+#define   kBBITTmask		@"kBBITTmask"				// NSNumber(BOOL), optional - mask the image (NavigationBars only)
+#define   kBBITTcolor		@"kBBITTcolor"				// UIColor, optional - item color, default white (NavigationBars only)
 #define kBBITTtext			@"kBBITTtext"				// NSString
 #define   kBBITTalignment	@"kBBITTalignment"			// NSNumber (integral) - UITextAlignment, default is left. Include in text dictionary
 #define   kBBITTbaseline	@"kBBITTbaseline"			// NSNumber (float), optional - tweak baseline, default is 0
+#define   kBBITTcolor		@"kBBITTcolor"				// UIColor, optional - item color, default white (NavigationBars only)
 #define kBBITTspace			@"kBBITTspace"				// NSNumber (integral) - empty space
 
 

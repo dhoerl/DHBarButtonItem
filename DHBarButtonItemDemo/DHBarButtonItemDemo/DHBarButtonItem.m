@@ -93,7 +93,7 @@
 			width = MAX(width, newWidth); 
 		}
 		widths[idx] = ceilf(width);
-NSLog(@"options[%d]=%f", idx, width);
+		// NSLog(@"options[%d]=%f", idx, width);
 		++idx;
 	}
 
@@ -101,16 +101,15 @@ NSLog(@"options[%d]=%f", idx, width);
 	idx = 0;
 	for(NSDictionary *dict in itemsArray) {
 		CGFloat newWidth = [self itemWidth:dict font:font];
-		assert(isnormal(newWidth));
 
 		CGFloat width = widths[idx];
 		width = MAX(width, newWidth); 
-NSLog(@"items[%d]=%f", idx, width);
+		// NSLog(@"items[%d]=%f", idx, width);
 		widths[idx]  = ceilf(width);
 		++idx;
 	}
 
-	for(NSUInteger idx=0; idx<count; ++idx) {
+	for(idx=0; idx<count; ++idx) {
 		widths[idx] += padding;
 		totalWidth += widths[idx];
 	}
@@ -185,20 +184,27 @@ NSLog(@"items[%d]=%f", idx, width);
 - (void)imageFromItems:(NSArray *)items
 {
 	if([items count] != count) return;
-
+NSLog(@"imageFromItems");
 	UIGraphicsBeginImageContextWithOptions(CGSizeMake(totalWidth, totalHeight), NO, 0);
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetInterpolationQuality(context,  kCGInterpolationHigh);	// in case an icon size is reduced
+	
+	CGColorRef white = [[UIColor whiteColor] CGColor];
 
 	CGFloat x = startingX;
 	CGFloat *widthsPtr = widths;
 
 	for(NSDictionary *dict in items) {
 		CGFloat width = *widthsPtr - padding;
+		CGContextSetFillColorWithColor(context, white);
+		UITextAlignment ta = [[dict objectForKey:kBBITTalignment] integerValue];
+		CGFloat baselineOffset = [[dict objectForKey:kBBITTbaseline] floatValue];
+		UIColor *color = [dict objectForKey:kBBITTcolor];
+		CGContextSetFillColorWithColor(context, color ? [color CGColor] : white);
+		BOOL mask = [[dict objectForKey:kBBITTmask] boolValue];
+	
 		for(NSString *key in [dict allKeys]) {
 			id object = [dict objectForKey:key];
-			UITextAlignment ta = [[dict objectForKey:kBBITTalignment] integerValue];
-			CGFloat baselineOffset = [[dict objectForKey:kBBITTbaseline] floatValue];
 			if([key isEqualToString:kBBITTimage]) {
 				CGRect r;
 				r.size = [DHBarButtonItem resizedImageSize:(UIImage *)object];
@@ -217,7 +223,14 @@ NSLog(@"items[%d]=%f", idx, width);
 					break;
 				}
 				r.origin.x = floorf( x + xVal );
-				[(UIImage *)object drawInRect:r];
+				if(mask) {
+					CGContextSaveGState(context);
+					CGContextClipToMask(context, r, [(UIImage *)object CGImage]);
+					CGContextFillRect(context, r);
+					CGContextRestoreGState(context);
+				} else {
+					[(UIImage *)object drawInRect:r];
+				}
 			} else
 			if([key isEqualToString:kBBITTtext]) {
 				CGFloat y = floorf( (totalHeight - font.lineHeight)/2 + baselineOffset);
@@ -233,4 +246,3 @@ NSLog(@"items[%d]=%f", idx, width);
 }
 
 @end
-
