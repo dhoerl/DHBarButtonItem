@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE2E512714276420000A9314 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2E512614276420000A9314 /* UIKit.framework */; };
+		DE2E512914276420000A9314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2E512814276420000A9314 /* Foundation.framework */; };
+		DE2E512B14276420000A9314 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2E512A14276420000A9314 /* CoreGraphics.framework */; };
+		DE2E513114276420000A9314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE2E512F14276420000A9314 /* InfoPlist.strings */; };
+		DE2E513314276420000A9314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E513214276420000A9314 /* main.m */; };
+		DE2E513714276420000A9314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E513614276420000A9314 /* AppDelegate.m */; };
+		DE2E513A14276420000A9314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E513914276420000A9314 /* ViewController.m */; };
+		DE2E513D14276420000A9314 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2E513B14276420000A9314 /* ViewController.xib */; };
+		DE2E514514276471000A9314 /* DHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E514414276471000A9314 /* DHBarButtonItem.m */; };
+		DE2E514E14276568000A9314 /* 00-Read me first - license.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514714276568000A9314 /* 00-Read me first - license.txt */; };
+		DE2E514F14276568000A9314 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514814276568000A9314 /* flower.png */; };
+		DE2E515014276568000A9314 /* flower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514914276568000A9314 /* flower@2x.png */; };
+		DE2E515114276568000A9314 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514A14276568000A9314 /* key.png */; };
+		DE2E515214276568000A9314 /* key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514B14276568000A9314 /* key@2x.png */; };
+		DE2E515314276568000A9314 /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514C14276568000A9314 /* plant.png */; };
+		DE2E515414276568000A9314 /* plant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514D14276568000A9314 /* plant@2x.png */; };
+		DE2E515614276D33000A9314 /* README in Resources */ = {isa = PBXBuildFile; fileRef = DE2E515514276D33000A9314 /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE2E512214276420000A9314 /* DHBarButtonItemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHBarButtonItemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2E512614276420000A9314 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE2E512814276420000A9314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE2E512A14276420000A9314 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE2E512E14276420000A9314 /* DHBarButtonItemDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DHBarButtonItemDemo-Info.plist"; sourceTree = "<group>"; };
+		DE2E513014276420000A9314 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE2E513214276420000A9314 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE2E513414276420000A9314 /* DHBarButtonItemDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHBarButtonItemDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DE2E513514276420000A9314 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE2E513614276420000A9314 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE2E513814276420000A9314 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE2E513914276420000A9314 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE2E513C14276420000A9314 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DE2E514314276471000A9314 /* DHBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBarButtonItem.h; sourceTree = "<group>"; };
+		DE2E514414276471000A9314 /* DHBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBarButtonItem.m; sourceTree = "<group>"; };
+		DE2E514714276568000A9314 /* 00-Read me first - license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "00-Read me first - license.txt"; sourceTree = "<group>"; };
+		DE2E514814276568000A9314 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
+		DE2E514914276568000A9314 /* flower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flower@2x.png"; sourceTree = "<group>"; };
+		DE2E514A14276568000A9314 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		DE2E514B14276568000A9314 /* key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key@2x.png"; sourceTree = "<group>"; };
+		DE2E514C14276568000A9314 /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plant.png; sourceTree = "<group>"; };
+		DE2E514D14276568000A9314 /* plant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plant@2x.png"; sourceTree = "<group>"; };
+		DE2E515514276D33000A9314 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE2E511F14276420000A9314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2E512714276420000A9314 /* UIKit.framework in Frameworks */,
+				DE2E512914276420000A9314 /* Foundation.framework in Frameworks */,
+				DE2E512B14276420000A9314 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE2E511714276420000A9314 = {
+			isa = PBXGroup;
+			children = (
+				DE2E515514276D33000A9314 /* README */,
+				DE2E512C14276420000A9314 /* DHBarButtonItemDemo */,
+				DE2E514614276526000A9314 /* GlyphishIcons */,
+				DE2E512514276420000A9314 /* Frameworks */,
+				DE2E512314276420000A9314 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE2E512314276420000A9314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E512214276420000A9314 /* DHBarButtonItemDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE2E512514276420000A9314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E512614276420000A9314 /* UIKit.framework */,
+				DE2E512814276420000A9314 /* Foundation.framework */,
+				DE2E512A14276420000A9314 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE2E512C14276420000A9314 /* DHBarButtonItemDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E513514276420000A9314 /* AppDelegate.h */,
+				DE2E513614276420000A9314 /* AppDelegate.m */,
+				DE2E514314276471000A9314 /* DHBarButtonItem.h */,
+				DE2E514414276471000A9314 /* DHBarButtonItem.m */,
+				DE2E513814276420000A9314 /* ViewController.h */,
+				DE2E513914276420000A9314 /* ViewController.m */,
+				DE2E513B14276420000A9314 /* ViewController.xib */,
+				DE2E512D14276420000A9314 /* Supporting Files */,
+			);
+			path = DHBarButtonItemDemo;
+			sourceTree = "<group>";
+		};
+		DE2E512D14276420000A9314 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E512E14276420000A9314 /* DHBarButtonItemDemo-Info.plist */,
+				DE2E512F14276420000A9314 /* InfoPlist.strings */,
+				DE2E513214276420000A9314 /* main.m */,
+				DE2E513414276420000A9314 /* DHBarButtonItemDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE2E514614276526000A9314 /* GlyphishIcons */ = {
+			isa = PBXGroup;
+			children = (
+				DE2E514714276568000A9314 /* 00-Read me first - license.txt */,
+				DE2E514814276568000A9314 /* flower.png */,
+				DE2E514914276568000A9314 /* flower@2x.png */,
+				DE2E514A14276568000A9314 /* key.png */,
+				DE2E514B14276568000A9314 /* key@2x.png */,
+				DE2E514C14276568000A9314 /* plant.png */,
+				DE2E514D14276568000A9314 /* plant@2x.png */,
+			);
+			path = GlyphishIcons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE2E512114276420000A9314 /* DHBarButtonItemDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE2E514014276420000A9314 /* Build configuration list for PBXNativeTarget "DHBarButtonItemDemo" */;
+			buildPhases = (
+				DE2E511E14276420000A9314 /* Sources */,
+				DE2E511F14276420000A9314 /* Frameworks */,
+				DE2E512014276420000A9314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DHBarButtonItemDemo;
+			productName = DHBarButtonItemDemo;
+			productReference = DE2E512214276420000A9314 /* DHBarButtonItemDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE2E511914276420000A9314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = DE2E511C14276420000A9314 /* Build configuration list for PBXProject "DHBarButtonItemDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE2E511714276420000A9314;
+			productRefGroup = DE2E512314276420000A9314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE2E512114276420000A9314 /* DHBarButtonItemDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE2E512014276420000A9314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2E513114276420000A9314 /* InfoPlist.strings in Resources */,
+				DE2E513D14276420000A9314 /* ViewController.xib in Resources */,
+				DE2E514E14276568000A9314 /* 00-Read me first - license.txt in Resources */,
+				DE2E514F14276568000A9314 /* flower.png in Resources */,
+				DE2E515014276568000A9314 /* flower@2x.png in Resources */,
+				DE2E515114276568000A9314 /* key.png in Resources */,
+				DE2E515214276568000A9314 /* key@2x.png in Resources */,
+				DE2E515314276568000A9314 /* plant.png in Resources */,
+				DE2E515414276568000A9314 /* plant@2x.png in Resources */,
+				DE2E515614276D33000A9314 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE2E511E14276420000A9314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2E513314276420000A9314 /* main.m in Sources */,
+				DE2E513714276420000A9314 /* AppDelegate.m in Sources */,
+				DE2E513A14276420000A9314 /* ViewController.m in Sources */,
+				DE2E514514276471000A9314 /* DHBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE2E512F14276420000A9314 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE2E513014276420000A9314 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DE2E513B14276420000A9314 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE2E513C14276420000A9314 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE2E513E14276420000A9314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE2E513F14276420000A9314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE2E514114276420000A9314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHBarButtonItemDemo/DHBarButtonItemDemo-Prefix.pch";
+				INFOPLIST_FILE = "DHBarButtonItemDemo/DHBarButtonItemDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE2E514214276420000A9314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DHBarButtonItemDemo/DHBarButtonItemDemo-Prefix.pch";
+				INFOPLIST_FILE = "DHBarButtonItemDemo/DHBarButtonItemDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE2E511C14276420000A9314 /* Build configuration list for PBXProject "DHBarButtonItemDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE2E513E14276420000A9314 /* Debug */,
+				DE2E513F14276420000A9314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE2E514014276420000A9314 /* Build configuration list for PBXNativeTarget "DHBarButtonItemDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE2E514114276420000A9314 /* Debug */,
+				DE2E514214276420000A9314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE2E511914276420000A9314 /* Project object */;
+}
