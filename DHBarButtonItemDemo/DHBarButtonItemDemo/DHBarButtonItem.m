@@ -1,6 +1,5 @@
 //
 //  DHBarButtonItem.m
-//  RotatePicker
 //
 //  Created by David Hoerl on 9/14/11.
 //  Copyright (c) 2011 David Hoerl. All rights reserved.
