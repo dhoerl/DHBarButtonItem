@@ -163,16 +163,6 @@
 - (void)setImageInsets:(UIEdgeInsets)inserts
 {
 	return; // user cannot set these on the bar button item itself
-#if 0
-	if(count) {
-		UIEdgeInsets ei = [super imageInsets];
-		assert(ei.top == inserts.top && ei.bottom == inserts.top);
-		if(ei.top != inserts.top || ei.bottom != inserts.top) {
-			return; // cannot change once the item is created
-		}
-	}
-	[super setImageInsets:inserts];
-#endif
 }
 
 - (void)dealloc
@@ -183,7 +173,6 @@
 - (void)imageFromItems:(NSArray *)items
 {
 	if([items count] != count) return;
-NSLog(@"imageFromItems");
 	UIGraphicsBeginImageContextWithOptions(CGSizeMake(totalWidth, totalHeight), NO, 0);
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetInterpolationQuality(context,  kCGInterpolationHigh);	// in case an icon size is reduced
