@@ -24,20 +24,17 @@
 //
 
 /*
-This control is provided an initial "image" array. Other items that might appear in a 
-column can be supplied in the initial options dictionary. For each position
-the widest possible item is computed, and that width used for that position. The total 
-width of the image used by the control is the sum of these widths plus the padding 
-that goes between each item. In addition, you can supply standard imageInsets
+	This control is provided an initial "image" array. Other items that might appear in a 
+	column can be supplied in the initial options dictionary. For each position
+	the widest possible item is computed, and that width used for that position. The total 
+	width of the image used by the control is the sum of these widths plus the padding 
+	that goes between each item. In addition, you can supply standard imageInsets
 
-This class should be created using the one class method itemWithImageItems that creates 
-an initial image using the first item of each array of items.
+	This class should be created using the one class method itemWithImageItems that creates 
+	an initial image using the first item of each array of items.
 
-To create a new image, use the object method replaceImageWithImageItems. The array passed to
-this method contains dictionaries.
-
-use
-
+	To create a new image, use the object method "imageFromItems". The array passed to
+	this method contains dictionaries.
 */
 
 // Item Dictionary Keys
@@ -62,8 +59,9 @@ use
 
 @interface DHBarButtonItem : UIBarButtonItem
 
+// itemsArray is an array of dictionaries using the above keys, one for each section
 + (DHBarButtonItem *)itemWithImageItems:(NSArray *)itemsArray options:(NSDictionary *)optDict;
 
-- (void)imageFromItems:(NSArray *)items;
+- (void)imageFromItems:(NSArray *)itemsArray;
 
 @end

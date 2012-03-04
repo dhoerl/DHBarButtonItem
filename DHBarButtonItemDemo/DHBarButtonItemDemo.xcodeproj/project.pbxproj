@@ -15,7 +15,6 @@
 		DE2E513714276420000A9314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E513614276420000A9314 /* AppDelegate.m */; };
 		DE2E513A14276420000A9314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E513914276420000A9314 /* ViewController.m */; };
 		DE2E513D14276420000A9314 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2E513B14276420000A9314 /* ViewController.xib */; };
-		DE2E514514276471000A9314 /* DHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2E514414276471000A9314 /* DHBarButtonItem.m */; };
 		DE2E514E14276568000A9314 /* 00-Read me first - license.txt in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514714276568000A9314 /* 00-Read me first - license.txt */; };
 		DE2E514F14276568000A9314 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514814276568000A9314 /* flower.png */; };
 		DE2E515014276568000A9314 /* flower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514914276568000A9314 /* flower@2x.png */; };
@@ -24,6 +23,7 @@
 		DE2E515314276568000A9314 /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514C14276568000A9314 /* plant.png */; };
 		DE2E515414276568000A9314 /* plant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2E514D14276568000A9314 /* plant@2x.png */; };
 		DE2E515614276D33000A9314 /* README in Resources */ = {isa = PBXBuildFile; fileRef = DE2E515514276D33000A9314 /* README */; };
+		DE4C8267143F40B2004B0E08 /* DHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C8266143F40B2004B0E08 /* DHBarButtonItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,6 @@
 		DE2E513814276420000A9314 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DE2E513914276420000A9314 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DE2E513C14276420000A9314 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		DE2E514314276471000A9314 /* DHBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBarButtonItem.h; sourceTree = "<group>"; };
-		DE2E514414276471000A9314 /* DHBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBarButtonItem.m; sourceTree = "<group>"; };
 		DE2E514714276568000A9314 /* 00-Read me first - license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "00-Read me first - license.txt"; sourceTree = "<group>"; };
 		DE2E514814276568000A9314 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
 		DE2E514914276568000A9314 /* flower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flower@2x.png"; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		DE2E514C14276568000A9314 /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plant.png; sourceTree = "<group>"; };
 		DE2E514D14276568000A9314 /* plant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plant@2x.png"; sourceTree = "<group>"; };
 		DE2E515514276D33000A9314 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
+		DE4C8265143F40B2004B0E08 /* DHBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHBarButtonItem.h; sourceTree = "<group>"; };
+		DE4C8266143F40B2004B0E08 /* DHBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHBarButtonItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2E515514276D33000A9314 /* README */,
+				DE4C8264143F40B2004B0E08 /* DHBarButtonItem */,
 				DE2E512C14276420000A9314 /* DHBarButtonItemDemo */,
 				DE2E514614276526000A9314 /* GlyphishIcons */,
 				DE2E512514276420000A9314 /* Frameworks */,
@@ -100,8 +101,6 @@
 			children = (
 				DE2E513514276420000A9314 /* AppDelegate.h */,
 				DE2E513614276420000A9314 /* AppDelegate.m */,
-				DE2E514314276471000A9314 /* DHBarButtonItem.h */,
-				DE2E514414276471000A9314 /* DHBarButtonItem.m */,
 				DE2E513814276420000A9314 /* ViewController.h */,
 				DE2E513914276420000A9314 /* ViewController.m */,
 				DE2E513B14276420000A9314 /* ViewController.xib */,
@@ -133,6 +132,16 @@
 				DE2E514D14276568000A9314 /* plant@2x.png */,
 			);
 			path = GlyphishIcons;
+			sourceTree = "<group>";
+		};
+		DE4C8264143F40B2004B0E08 /* DHBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				DE4C8265143F40B2004B0E08 /* DHBarButtonItem.h */,
+				DE4C8266143F40B2004B0E08 /* DHBarButtonItem.m */,
+			);
+			name = DHBarButtonItem;
+			path = ../DHBarButtonItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +217,7 @@
 				DE2E513314276420000A9314 /* main.m in Sources */,
 				DE2E513714276420000A9314 /* AppDelegate.m in Sources */,
 				DE2E513A14276420000A9314 /* ViewController.m in Sources */,
-				DE2E514514276471000A9314 /* DHBarButtonItem.m in Sources */,
+				DE4C8267143F40B2004B0E08 /* DHBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,7 @@
 				DE2E514214276420000A9314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
