@@ -213,6 +213,7 @@
 				r.origin.x = floorf( x + xVal );
 				if(mask) {
 					CGContextSaveGState(context);
+					CGContextConcatCTM(context, CGAffineTransformMake(1, 0, 0, -1, 0, r.size.height));
 					CGContextClipToMask(context, r, [(UIImage *)object CGImage]);
 					CGContextFillRect(context, r);
 					CGContextRestoreGState(context);

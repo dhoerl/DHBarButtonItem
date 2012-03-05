@@ -1,5 +1,9 @@
 DHBarButtonItem is a UIBarButtonItem subclass that lets you create bar-button-items by specifying arrays containing images, text, and spacing.
 
+v1.1: 
+ * masked images were not properly flipped - fixed
+ * more example code added to this README
+
 You create this item using the class factory method:
 
   + (DHBarButtonItem *)itemWithImageItems:(NSArray *)itemsArray options:(NSDictionary *)optDict;
@@ -16,7 +20,45 @@ To change the displayed item, you message the object with:
 
   - (void)imageFromItems:(NSArray *)items;
 
-Look at the demo code in ViewController.m
+Look at the demo code in ViewController.m, or here is an example of getting white icons in a navigation bar, and toggling the second image on every tap:
+
+	UIImage *gift	= [UIImage imageNamed:@"24-gift.png"];
+	UIImage *box	= [UIImage imageNamed:@"58-box.png"];
+	UIImage *check	= [UIImage imageNamed:@"58-todo.png"];
+	
+	NSDictionary *giftDict	= [NSDictionary dictionaryWithObjectsAndKeys:gift, kBBITTimage, [NSNumber numberWithBool:YES], kBBITTmask, nil];
+	NSDictionary *boxDict	= [NSDictionary dictionaryWithObjectsAndKeys:box, kBBITTimage, [NSNumber numberWithBool:YES], kBBITTmask, nil];
+	NSDictionary *checkDict	= [NSDictionary dictionaryWithObjectsAndKeys:check, kBBITTimage, [NSNumber numberWithBool:YES], kBBITTmask, nil];
+	
+	noGiftArray	= [NSArray arrayWithObjects:
+					giftDict,
+					boxDict,
+					nil];
+	giftArray	= [NSArray arrayWithObjects:
+					giftDict,
+					checkDict,
+					nil];
+
+	DHBarButtonItem *item = [DHBarButtonItem itemWithImageItems:noGiftArray options:[NSDictionary dictionaryWithObjectsAndKeys:
+								[NSNumber numberWithInteger:UIBarButtonItemStylePlain], kBBITToptStyle,
+								[NSNumber numberWithInteger:8], kBBITToptPadding,
+								[NSArray arrayWithObjects:
+									[NSArray arrayWithObject:giftDict],
+									[NSArray arrayWithObjects:boxDict, checkDict, nil],
+									nil], kBBITToptionsArray,
+								nil]
+							];
+	item.target = self;
+	item.action = @selector(giftAction:);
+	self.navigationItem.rightBarButtonItem = item;
+}
+
+- (IBAction)giftAction:(id)sender
+{
+	giftOn = !giftOn;
+	[((DHBarButtonItem *)sender) imageFromItems:giftOn ? giftArray : noGiftArray];
+}
+
 
 Note 1: This code utilizes "ARC" - if you are not using it you will almost certainly need to fork this code and add the appropriate retain and releases.
 
